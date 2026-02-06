@@ -25,10 +25,9 @@ public class ExampleTest {
                 .setAutomationName("UiAutomator2")
                 .setDeviceName("emulator-5554")
                 .setApp("D:\\Users\\Asus TUF\\Desktop\\Christian\\Pruebas Remoto\\Neoris\\Appium Sauce Labs\\mda.apk")
+                .setIsHeadless(true)
                 .setAutoGrantPermissions(true);
-        /*.setAppPackage("com.android.chrome")
-                .setAppActivity("com.google.android.apps.chrome.Main");*/
-        options.setAppWaitActivity("com.saucelabs.mydemoapp.android.view.activities.MainActivity");
+        //options.setAppWaitActivity("com.saucelabs.mydemoapp.android.view.activities.MainActivity");
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723/"), options);
     }
 
